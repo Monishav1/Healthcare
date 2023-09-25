@@ -70,7 +70,7 @@ public class appointment extends CommonFunction{
 		WebElement emailid=driver.findElement(By.xpath("//div[@class='emailInput input']/input"));
 		emailid.sendKeys("steve973@gmail.com");
 		WebElement cardnumber=driver.findElement(By.xpath("//input[@id='card_number']"));
-		//cardnumber.sendKeys("5555 5555 5555 4444");
+		//cardnumber.sendKeys("5555 5555 5555 4444"); We need to send a full card number use js 
 		JavascriptExecutor executor=(JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].value='5555 5555 5555 4444'" ,cardnumber);
 		WebElement cardvalidity=driver.findElement(By.xpath("//input[@id='cc-exp']"));
